@@ -3,6 +3,7 @@ import React from "react";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 import {DigitNumber} from './DigitNumber';
+import { Clock } from 'react-bootstrap-icons';
 
 //create your first component
 const SecondsCounter = ({seconds}) => {
@@ -23,11 +24,10 @@ const SecondsCounter = ({seconds}) => {
 					<div className="card-group">
 						<div className="card text-center bg-dark text-light border">
 							<div className="card-body">
-							<i className="bi bi-clock" style="font-size: 2rem; color: cornflowerblue;"></i>
-								<p className="card-text" style={{fontSize:100}}>
-								<i className="bi bi-clock" style="font-size: 2rem; color: cornflowerblue;"></i>
-								</p>
-								<i className="bi bi-clock" style="font-size: 2rem; color: cornflowerblue;"></i>
+							
+								<Clock color="white" size={150} />
+							
+								
 							</div>
         				</div>	
 						<DigitNumber digit = {arr[arr.length - 5]}/>
